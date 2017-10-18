@@ -5,12 +5,16 @@ name: rover
 #  - <url-to-other-package-set-as-being-done-in-a-manifest>
 
 # The following section defines where to find the packages DEFINED in this package set only
-# version_control:
-#   # Default for all packages
+version_control:
+#   # Example: Default for all packages
 #   - .*:
 #     type: git
 #     url: https://github.com/rock-core/$PACKAGE.git
 #     branch: master
+  - bundles/rover:
+    type: git
+    url: https://github.com/ESA-PRL/bundles-rover.git
+    branch: master
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
 # Precedence is given by the order they are stated in the manifest.
