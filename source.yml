@@ -14,6 +14,9 @@ name: rover
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
 # Precedence is given by the order they are stated in the manifest.
-# overrides:
-#    - <name-of-package>:
-#      branch: <alternative-branch>
+overrides:
+  # The following packages are defined somewhere in the ROCK package sets, but we want to override their branch by default
+  - drivers/controldev:
+    branch: onedimensional
+  - drivers/orogen/controldev:
+    branch: onedimensional
