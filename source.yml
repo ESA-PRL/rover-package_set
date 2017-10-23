@@ -15,6 +15,22 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/bundles-rover.git
     branch: master
+  - planning/path_planning:
+    type: git
+    url: https://github.com/ESA-PRL/planning-path_planning.git
+    branch: master
+  - planning/orogen/path_planning:
+    type: git
+    url: https://github.com/ESA-PRL/planning-orogen-path_planning.git
+    branch: master
+  - simulation/vrep:
+    type: git
+    url: https://github.com/ESA-PRL/simulation-vrep.git
+    branch: master
+  - simulation/orogen/simulation_vrep:
+    type: git
+    url: https://github.com/ESA-PRL/simulation-orogen-simulation_vrep.git
+    branch: master
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
 # Precedence is given by the order they are stated in the manifest.

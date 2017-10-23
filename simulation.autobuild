@@ -1,0 +1,5 @@
+# This file specifies the packages of ESA PRL rover package set which can be seen as being simulation related
+# When the source.yml contains the repository info, you should specify here how that package can be build
+
+cmake_package "simulation/vrep"
+orogen_package "simulation/orogen/simulation_vrep"
