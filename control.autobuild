@@ -6,3 +6,4 @@
 # orogen_package "control/orogen/generic_rover_manoeuvre"
 
 cmake_package "control/generic_rover_manoeuvre"
+orogen_package "control/orogen/locomotion_switcher"

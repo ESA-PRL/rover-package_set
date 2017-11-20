@@ -23,6 +23,10 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/planning-orogen-path_planning.git
     branch: master
+  - control/orogen/locomotion_switcher:
+    type: git
+    url: https://github.com/exoter-rover/control-orogen-locomotion_switcher.git
+    branch: master
   - simulation/vrep:
     type: git
     url: https://github.com/ESA-PRL/simulation-vrep.git

@@ -3,4 +3,3 @@
 
 cmake_package "planning/path_planning"
 orogen_package "planning/orogen/path_planning"
-
