@@ -39,6 +39,13 @@ version_control:
     type: git
     url: https://github.com/rock-control/control-generic_rover_manoeuvre.git
     branch: master
+  - perception/stereo:
+    type: git
+    url: https://github.com/hdpr-rover/perception-stereo.git
+  - perception/orogen/stereo:
+    type: git
+    url: https://github.com/hdpr-rover/perception-orogen-stereo.git
+    branch: rock_master
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
 # Precedence is given by the order they are stated in the manifest.
