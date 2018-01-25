@@ -1,0 +1,12 @@
+popt:
+    debian, ubuntu: libpopt-dev
+
+apr1:
+    debian,ubuntu: libapr1-dev
+
+sdl:
+    debian, ubuntu: libsdl-net1.2
+
+sdl-dev:
+    debian, ubuntu: libsdl-net1.2-dev
+

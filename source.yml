@@ -35,6 +35,30 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/simulation-orogen-simulation_vrep.git
     branch: master
+  - drivers/pcan_pcie_mini:
+    type: archive
+    url: http://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-8.5.1.tar.gz
+    update_cached_file: false
+  - drivers/platform_driver:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-platform_driver.git
+    branch: master
+  - drivers/orogen/platform_driver:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-platform_driver.git
+    branch: master
+  - drivers/activeMQ:
+    type: archive
+    url: http://mirror.stjschools.org/public/apache/activemq/activemq-cpp/3.9.3/activemq-cpp-library-3.9.3-src.tar.gz
+    update_cached_file: false
+  - drivers/telemetry_telecommand:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-telemetry_telecommand.git
+    branch: master
+  - drivers/orogen/telemetry_telecommand:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-telemetry_telecommand.git
+    branch: master
   - control/generic_rover_manoeuvre:
     type: git
     url: https://github.com/rock-control/control-generic_rover_manoeuvre.git

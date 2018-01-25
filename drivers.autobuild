@@ -4,3 +4,94 @@
 # The following drivers might be overridden by the original def in rock package set.
 # cmake_package "drivers/controldev"
 # orogen_package "drivers/orogen/controldev"
+
+
+#if !has_pcan_api? # defined in init.rb
+#    Autoproj.manifest.add_exclusion "control/platform_driver", "Peak PCI Express Mini needed for platform_driver is not installed!. Install it manually: http://www.peak-system.com/fileadmin/media/linux/index.htm"
+#end
+
+if !has_pcan_api? # defined in init.rb
+import_package 'drivers/pcan_pcie_mini' do |pkg|
+    def pkg.prepare
+        super
+        isolate_errors do
+            build
+            progress_done
+        end
+        message "Importing MINI PCI Express package"
+    end
+
+    def pkg.build
+        in_dir (srcdir) do
+            run("build", Autobuild.tool(:make), 'NET=NO')
+        end
+        message "Built MINI PCI Express package"
+    end
+    
+    def pkg.install
+        message "Installing MINI PCI Express package..."
+        include_install_prefix = File.join(prefix, "include", name.split('/')[1])
+        FileUtils.mkdir_p include_install_prefix
+
+        FileUtils.install(File.join(srcdir, "lib","libpcan.h"), include_install_prefix)
+        FileUtils.install(File.join(srcdir, "driver","pcan.h"), include_install_prefix)
+
+        FileUtils.mkdir_p File.join(prefix, "lib")
+        FileUtils.install(File.join(srcdir, "lib","libpcan.so"), File.join(prefix, "lib"))
+
+        # For the ExoTeR rover with sudo rights
+        in_dir (srcdir) do
+            run('install', 'sudo make install ')
+            run('install', 'sudo modprobe pcan')
+        end
+        message "Installed MINI PCI Express package"
+    end
+end
+end
+
+
+# Telemetry telecommand depends on this package
+
+#if !has_activemq_api? # defined in init.rb
+import_package 'drivers/activeMQ' do |pkg|
+    
+    def pkg.buildstamp; "autobuild-stamp" end
+
+    def pkg.prepare
+        message "Configuring activeMQ package..."
+        super
+        in_dir(srcdir) do
+            run("prepare_configure","./configure", "--prefix=#{Autobuild.prefix}")
+        end
+        isolate_errors do
+            build
+            progress_done
+        end
+        message "Configured activeMQ package"
+    end
+
+    def pkg.build
+        message "Building activeMQ package..."
+        in_dir(srcdir) do
+            run("build", Autobuild.tool(:make))
+        end
+        message "Built activeMQ package"
+    end
+
+    def pkg.install
+        message "Installing activeMQ package..."
+        super
+        in_dir(srcdir) do
+            run("install", "make install")
+        end
+        FileUtils.install(File.join(srcdir, "activemq-cpp.pc"), File.join(prefix, 'lib', "pkgconfig", "activemq-cpp.pc"))
+        message "Installed activeMQ package"
+    end
+end
+#end
+
+cmake_package "drivers/platform_driver"
+orogen_package "drivers/orogen/platform_driver"
+
+cmake_package "drivers/telemetry_telecommand"
+orogen_package "drivers/orogen/telemetry_telecommand"
