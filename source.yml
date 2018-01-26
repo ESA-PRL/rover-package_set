@@ -51,6 +51,14 @@ version_control:
     type: archive
     url: http://mirror.stjschools.org/public/apache/activemq/activemq-cpp/3.9.3/activemq-cpp-library-3.9.3-src.tar.gz
     update_cached_file: false
+  - drivers/temperature:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-temperature.git
+    branch: master
+  - drivers/orogen/temperature:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-temperature.git
+    branch: master
   - drivers/telemetry_telecommand:
     type: git
     url: https://github.com/ESA-PRL/drivers-telemetry_telecommand.git
