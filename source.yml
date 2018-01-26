@@ -23,10 +23,6 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/planning-orogen-path_planning.git
     branch: master
-  - control/orogen/locomotion_switcher:
-    type: git
-    url: https://github.com/exoter-rover/control-orogen-locomotion_switcher.git
-    branch: master
   - simulation/vrep:
     type: git
     url: https://github.com/ESA-PRL/simulation-vrep.git
@@ -59,6 +55,14 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-temperature.git
     branch: master
+  - drivers/dsp1760:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-dsp1760.git
+    branch: master
+  - drivers/orogen/dsp1760:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-dsp1760.git
+    branch: master
   - drivers/telemetry_telecommand:
     type: git
     url: https://github.com/ESA-PRL/drivers-telemetry_telecommand.git
@@ -67,9 +71,33 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-telemetry_telecommand.git
     branch: master
+  - drivers/orogen/camera_trigger:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-camera_trigger.git
+    branch: master
+  - drivers/orogen/camera_bb2:
+    type: git
+    url: https://github.com/rock-drivers/drivers-orogen-camera_bb2.git
+    branch: master
+  - drivers/orogen/camera_bb3:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-camera_bb3.git
+    branch: master
   - control/generic_rover_manoeuvre:
     type: git
     url: https://github.com/rock-control/control-generic_rover_manoeuvre.git
+    branch: master
+  - control/locomotion_control:
+    type: git
+    url: https://github.com/ESA-PRL/control-locomotion_control.git
+    branch: master
+  - control/orogen/locomotion_control:
+    type: git
+    url: https://github.com/ESA-PRL/control-orogen-locomotion_control.git
+    branch: master
+  - control/orogen/locomotion_switcher:
+    type: git
+    url: https://github.com/ESA-PRL/control-orogen-locomotion_switcher.git
     branch: master
   - perception/stereo:
     type: git
@@ -87,3 +115,8 @@ overrides:
     branch: onedimensional
   - drivers/orogen/controldev:
     branch: onedimensional
+  - drivers/orogen/camera_firewire:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-camera_firewire.git
+    branch: master
+

@@ -97,3 +97,10 @@ orogen_package "drivers/orogen/temperature"
 
 cmake_package "drivers/telemetry_telecommand"
 orogen_package "drivers/orogen/telemetry_telecommand"
+
+cmake_package "drivers/dsp1760"
+orogen_package "drivers/orogen/dsp1760"
+
+orogen_package "drivers/orogen/camera_trigger"
+orogen_package "drivers/orogen/camera_bb2"
+orogen_package "drivers/orogen/camera_bb3"
