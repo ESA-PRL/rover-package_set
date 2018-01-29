@@ -101,6 +101,14 @@ orogen_package "drivers/orogen/telemetry_telecommand"
 cmake_package "drivers/dsp1760"
 orogen_package "drivers/orogen/dsp1760"
 
+orogen_package "drivers/orogen/velodyne_lidar"
+orogen_package "drivers/orogen/tofcamera_mesasr"
+
 orogen_package "drivers/orogen/camera_trigger"
 orogen_package "drivers/orogen/camera_bb2"
 orogen_package "drivers/orogen/camera_bb3"
+orogen_package "drivers/orogen/ptu_directedperception"
+
+cmake_package "drivers/gnss_trimble"
+orogen_package "drivers/orogen/gnss_trimble"
+

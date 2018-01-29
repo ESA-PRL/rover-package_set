@@ -6,4 +6,19 @@
 # orogen_package "control/orogen/generic_rover_manoeuvre"
 
 cmake_package "control/generic_rover_manoeuvre"
+cmake_package "control/locomotion_control"
+orogen_package "control/orogen/locomotion_control"
+orogen_package "control/orogen/motion_translator"
+orogen_package "control/orogen/command_arbiter"
 orogen_package "control/orogen/locomotion_switcher"
+
+cmake_package "control/waypoint_navigation"
+orogen_package "control/orogen/waypoint_navigation"
+
+orogen_package "control/orogen/slippage_estimator"
+
+orogen_package "control/orogen/gps_heading"
+
+orogen_package "control/orogen/pancam_panorama"
+orogen_package "control/orogen/pancam_360"
+

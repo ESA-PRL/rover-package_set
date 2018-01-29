@@ -4,3 +4,9 @@
 # The following drivers might be overridden by the original def in rock package set.
 cmake_package "perception/stereo"
 orogen_package "perception/orogen/stereo"
+
+cmake_package "perception/shutter_controller"
+orogen_package "perception/orogen/shutter_controller"
+
+cmake_package "perception/hazard_detector"
+orogen_package "perception/orogen/hazard_detector"
