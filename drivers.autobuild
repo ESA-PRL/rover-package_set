@@ -2,8 +2,8 @@
 # When the source.yml contains the repository info, you should specify here how that package can be build
 
 # The following drivers might be overridden by the original def in rock package set.
-# cmake_package "drivers/controldev"
-# orogen_package "drivers/orogen/controldev"
+cmake_package "drivers/controldev"
+orogen_package "drivers/orogen/controldev"
 
 
 #if !has_pcan_api? # defined in init.rb
@@ -51,43 +51,45 @@ end
 
 
 # Telemetry telecommand depends on this package
-#if !has_activemq_api? # defined in init.rb
-import_package 'drivers/activeMQ' do |pkg|
-    
-    def pkg.buildstamp; "autobuild-stamp" end
+if !has_activemq_api? # defined in init.rb
+    import_package 'drivers/activeMQ' do |pkg|
 
-    def pkg.prepare
-        message "Configuring activeMQ package..."
-        super
-        in_dir(srcdir) do
-#            run("prepare_configure","./configure", "--prefix=#{Autobuild.prefix}")
-        end
-        isolate_errors do
-            build
-            progress_done
-        end
-        message "Configured activeMQ package"
-    end
+        def pkg.buildstamp; "autobuild-stamp" end
 
-    def pkg.build
-        message "Building activeMQ package..."
-        in_dir(srcdir) do
-            run("build", Autobuild.tool(:make))
+        def pkg.prepare
+            message "Configuring activeMQ package..."
+            super
+            in_dir(srcdir) do
+                run("prepare_configure","./configure", "--prefix=#{Autobuild.prefix}")
+            end
+            isolate_errors do
+                build
+                progress_done
+            end
+            message "Configured activeMQ package"
         end
-        message "Built activeMQ package"
-    end
 
-    def pkg.install
-        message "Installing activeMQ package..."
-        super
-        in_dir(srcdir) do
-            run("install", "make install")
+        def pkg.build
+            message "Building activeMQ package..."
+            in_dir(srcdir) do
+                run("build", Autobuild.tool(:make))
+            end
+            message "Built activeMQ package"
         end
-        FileUtils.install(File.join(srcdir, "activemq-cpp.pc"), File.join(prefix, 'lib', "pkgconfig", "activemq-cpp.pc"))
-        message "Installed activeMQ package"
+
+        def pkg.install
+            message "Installing activeMQ package..."
+            super
+            in_dir(srcdir) do
+                run("install", "make install")
+            end
+            FileUtils.install(File.join(srcdir, "activemq-cpp.pc"), File.join(prefix, 'lib', "pkgconfig", "activemq-cpp.pc"))
+            message "Installed activeMQ package"
+        end
     end
+else
+    cmake_package "drivers/activeMQ"
 end
-#end
 
 cmake_package "drivers/platform_driver"
 orogen_package "drivers/orogen/platform_driver"
