@@ -5,6 +5,15 @@
 cmake_package "perception/stereo"
 orogen_package "perception/orogen/stereo"
 
+cmake_package "perception/dem_generation"
+orogen_package "perception/orogen/dem_generation"
+
+cmake_package "perception/cartographer"
+orogen_package "perception/orogen/cartographer"
+
+orogen_package "perception/orogen/viso2"
+orogen_package "perception/orogen/viso2_with_imu"
+
 cmake_package "perception/shutter_controller"
 orogen_package "perception/orogen/shutter_controller"
 

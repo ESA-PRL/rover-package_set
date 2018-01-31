@@ -2,17 +2,19 @@
 # When the source.yml contains the repository info, you should specify here how that package can be build
 
 # The following drivers might be overridden by the original def in rock package set.
-# cmake_package "control/generic_rover_manoeuvre"
-# orogen_package "control/orogen/generic_rover_manoeuvre"
 
 cmake_package "control/generic_rover_manoeuvre"
 cmake_package "control/locomotion_control"
+cmake_package "control/waypoint_navigation"
 orogen_package "control/orogen/locomotion_control"
+#orogen_package "control/orogen/joint_dispatcher"
+cmake_package "exoter/exoter_kinematics" 
+orogen_package "control/orogen/wheelwalking_control"
+orogen_package "control/orogen/ptu_control"
 orogen_package "control/orogen/motion_translator"
 orogen_package "control/orogen/command_arbiter"
 orogen_package "control/orogen/locomotion_switcher"
 
-cmake_package "control/waypoint_navigation"
 orogen_package "control/orogen/waypoint_navigation"
 
 orogen_package "control/orogen/slippage_estimator"

@@ -95,9 +95,21 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/control-locomotion_control.git
     branch: master
+  - exoter/exoter_kinematics:
+    type: git
+    url: https://github.com/ESA-PRL/exoter-exoter_kinematics.git
+    branch: master
   - control/orogen/locomotion_control:
     type: git
     url: https://github.com/ESA-PRL/control-orogen-locomotion_control.git
+    branch: master
+  - control/orogen/wheelwalking_control:
+    type: git
+    url: https://github.com/ESA-PRL/control-orogen-wheelwalking_control.git
+    branch: master
+  - control/orogen/ptu_control:
+    type: git
+    url: https://github.com/ESA-PRL/control-orogen-ptu_control.git
     branch: master
   - control/orogen/motion_translator:
     type: git
@@ -144,15 +156,27 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/perception-orogen-hazard_detector.git
     branch: master
-
-  - perception/stereo:
+  - perception/dem_generation:
     type: git
-    url: https://github.com/hdpr-rover/perception-stereo.git
+    url: https://github.com/ESA-PRL/perception-dem_generation.git
     branch: master
-  - perception/orogen/stereo:
+  - perception/orogen/dem_generation:
     type: git
-    url: https://github.com/hdpr-rover/perception-orogen-stereo.git
-    branch: rock_master
+    url: https://github.com/ESA-PRL/perception-orogen-dem_generation.git
+    branch: master
+  - perception/cartographer:
+    type: git
+    url: https://github.com/ESA-PRL/perception-cartographer.git
+    branch: master
+  - perception/orogen/cartographer:
+    type: git
+    url: https://github.com/ESA-PRL/perception-orogen-cartographer.git
+    branch: master
+
+  - perception/orogen/viso2_with_imu:
+    type: git
+    url: https://github.com/ESA-PRL/perception-orogen-viso2_with_imu.git
+    branch: master
 
   - planning/path_planning:
     type: git
@@ -171,6 +195,10 @@ overrides:
     branch: onedimensional
   - drivers/orogen/controldev:
     branch: onedimensional
+  - drivers/orogen/imu_stim300:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-imu_stim300.git
+    branch: master
   - drivers/orogen/camera_firewire:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-camera_firewire.git
@@ -191,4 +219,16 @@ overrides:
     type: git
     url: https://github.com/ESA-PRL/control-orogen-waypoint_navigation.git
     branch: master
+  - perception/orogen/viso2:
+    type: git
+    url: https://github.com/ESA-PRL/perception-orogen-viso2.git
+    branch: master
+#  - perception/stereo:
+#    type: git
+#    url: https://github.com/ESA-PRL/perception-stereo.git
+#    branch: master
+#  - perception/orogen/stereo:
+#    type: git
+#    url: https://github.com/ESA-PRL/perception-orogen-stereo.git
+#    branch: master
 
