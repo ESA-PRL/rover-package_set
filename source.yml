@@ -199,10 +199,6 @@ overrides:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-imu_stim300.git
     branch: master
-  - drivers/orogen/camera_firewire:
-    type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-camera_firewire.git
-    branch: master
   - drivers/orogen/ptu_directedperception:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-ptu_directedperception.git
