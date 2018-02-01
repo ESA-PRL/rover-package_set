@@ -131,7 +131,6 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/control-orogen-slippage_estimator.git
     branch: master
-
   - drivers/orogen/gnss_trimble:
     type: git
     url: https://github.com/rock-drivers/drivers-orogen-gnss_trimble.git
@@ -172,12 +171,10 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/perception-orogen-cartographer.git
     branch: master
-
   - perception/orogen/viso2_with_imu:
     type: git
     url: https://github.com/ESA-PRL/perception-orogen-viso2_with_imu.git
     branch: master
-
   - planning/path_planning:
     type: git
     url: https://github.com/ESA-PRL/planning-path_planning.git
@@ -185,6 +182,22 @@ version_control:
   - planning/orogen/path_planning:
     type: git
     url: https://github.com/ESA-PRL/planning-orogen-path_planning.git
+    branch: master
+  - rover/orogen/rover_deployments:
+    type: git
+    url: https://github.com/ESA-PRL/rover-orogen-rover_deployments.git
+    branch: master
+  - slam/threed_odometry:
+    type: git
+    url: https://github.com/rock-slam/slam-threed_odometry
+    branch: master
+  - slam/ga_slam:
+    type: git
+    url: https://github.com/ESA-PRL/slam-ga_slam.git
+    branch: master
+  - slam/orogen/ga_slam:
+    type: git
+    url: https://github.com/ESA-PRL/slam-orogen-ga_slam.git
     branch: master
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
@@ -219,6 +232,11 @@ overrides:
     type: git
     url: https://github.com/ESA-PRL/perception-orogen-viso2.git
     branch: master
+  - slam/orogen/threed_odometry:
+    type: git
+    url: https://github.com/ESA-PRL/slam-orogen-threed_odometry
+    branch: master
+
 #  - perception/stereo:
 #    type: git
 #    url: https://github.com/ESA-PRL/perception-stereo.git

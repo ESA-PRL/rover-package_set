@@ -1,3 +1,5 @@
 # This files contains bundles to be imported from autoproj
 
 import_package "bundles/rover"
+
+orogen_package "rover/orogen/rover_deployments"
