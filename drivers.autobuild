@@ -51,7 +51,7 @@ end
 
 
 # Telemetry telecommand depends on this package
-#if !has_activemq_api? # defined in init.rb
+if !has_activemq_api? # defined in init.rb
     import_package 'drivers/activeMQ' do |pkg|
 
         def pkg.buildstamp; "autobuild-stamp" end
@@ -60,7 +60,7 @@ end
             message "Configuring activeMQ package..."
             super
             in_dir(srcdir) do
-#                run("prepare_configure","./configure", "--prefix=#{Autobuild.prefix}")
+                run("prepare_configure","./configure", "--prefix=#{Autobuild.prefix}")
             end
             isolate_errors do
                 build
@@ -87,9 +87,9 @@ end
             message "Installed activeMQ package"
         end
     end
-#else
+else
     cmake_package "drivers/activeMQ"
-#end
+end
 
 cmake_package "drivers/platform_driver"
 orogen_package "drivers/orogen/platform_driver"
