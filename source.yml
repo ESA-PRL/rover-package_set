@@ -236,13 +236,12 @@ overrides:
     type: git
     url: https://github.com/ESA-PRL/slam-orogen-threed_odometry
     branch: master
-
-#  - perception/stereo:
-#    type: git
-#    url: https://github.com/ESA-PRL/perception-stereo.git
-#    branch: master
-#  - perception/orogen/stereo:
-#    type: git
-#    url: https://github.com/ESA-PRL/perception-orogen-stereo.git
-#    branch: master
+  - perception/stereo:
+    type: git
+    url: https://github.com/ESA-PRL/perception-stereo.git
+    branch: master
+  - perception/orogen/stereo:
+    type: git
+    url: https://github.com/ESA-PRL/perception-orogen-stereo.git
+    branch: master
 
