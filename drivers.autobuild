@@ -86,6 +86,10 @@ import_package 'drivers/activeMQ' do |pkg|
         end
         FileUtils.install(File.join(srcdir, "activemq-cpp.pc"), File.join(prefix, 'lib', "pkgconfig", "activemq-cpp.pc"))
         message "Installed activeMQ package"
+        in_dir(srcdir) do
+            run("Clean-up", "sed -i -e 's/^Libs.private/\#Libs.private/g' activemq-cpp.pc.in")
+            message "Commented out faulty line in activemq-cpp.pc.in"
+        end
     end
 end
 cmake_package "drivers/activeMQ"
