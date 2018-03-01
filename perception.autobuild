@@ -19,3 +19,6 @@ orogen_package "perception/orogen/shutter_controller"
 
 cmake_package "perception/hazard_detector"
 orogen_package "perception/orogen/hazard_detector"
+
+cmake_package "perception/traversability"
+orogen_package "perception/orogen/traversability"

@@ -199,6 +199,14 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/slam-orogen-ga_slam.git
     branch: master
+  - perception/traversability:
+    type: git
+    url: https://github.com/ESA-PRL/perception-traversability.git
+    branch: master
+  - perception/orogen/traversability:
+    type: git
+    url: https://github.com/ESA-PRL/perception-orogen-traversability.git
+    branch: master
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
 # Precedence is given by the order they are stated in the manifest.
