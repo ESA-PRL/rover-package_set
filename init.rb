@@ -5,7 +5,7 @@ def has_pcan_api?
 end
 
 def has_activemq_api?
-    file = File.join(ENV['HOME'],"rock","drivers","activeMQ","activemq-cpp.pc.in")
+    file = File.join(ENV['HOME'],"rock","install","lib","pkgconfig","activemq-cpp.pc")
     File.exists?(file)
 end
 
