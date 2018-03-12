@@ -30,20 +30,21 @@ import_package 'drivers/pcan_pcie_mini' do |pkg|
     
     def pkg.install
         message "Installing MINI PCI Express package..."
-        include_install_prefix = File.join(prefix, "include", name.split('/')[1])
-        FileUtils.mkdir_p include_install_prefix
 
-        FileUtils.install(File.join(srcdir, "lib","libpcan.h"), include_install_prefix)
-        FileUtils.install(File.join(srcdir, "driver","pcan.h"), include_install_prefix)
-
-        FileUtils.mkdir_p File.join(prefix, "lib")
-        FileUtils.install(File.join(srcdir, "lib","libpcan.so"), File.join(prefix, "lib"))
-
-        # For the ExoTeR rover with sudo rights
         in_dir (srcdir) do
             run('install', 'sudo make install ')
-            run('install', 'sudo modprobe pcan')
+            # run('install', 'sudo modprobe pcan')
         end
+
+        #include_install_prefix = File.join(prefix, "include", name.split('/')[1])
+        #FileUtils.mkdir_p include_install_prefix
+
+        #FileUtils.install(File.join(srcdir, "lib","libpcan.h"), include_install_prefix)
+        #FileUtils.install(File.join(srcdir, "driver","pcan.h"), include_install_prefix)
+
+        #FileUtils.mkdir_p File.join(prefix, "lib")
+        #FileUtils.install(File.join(srcdir, "lib","libpcan.so"), File.join(prefix, "lib"))
+
         message "Installed MINI PCI Express package"
     end
 end
@@ -84,12 +85,12 @@ import_package 'drivers/activeMQ' do |pkg|
         in_dir(srcdir) do
             run("install", "make install")
         end
+        in_dir(srcdir) do
+            run("Clean-up", "sed -i -e 's/^Libs.private/\#Libs.private/g' activemq-cpp.pc")
+            message "Commented out faulty line in activemq-cpp.pc"
+        end
         FileUtils.install(File.join(srcdir, "activemq-cpp.pc"), File.join(prefix, 'lib', "pkgconfig", "activemq-cpp.pc"))
         message "Installed activeMQ package"
-        in_dir(srcdir) do
-            run("Clean-up", "sed -i -e 's/^Libs.private/\#Libs.private/g' activemq-cpp.pc.in")
-            message "Commented out faulty line in activemq-cpp.pc.in"
-        end
     end
 end
 cmake_package "drivers/activeMQ"
