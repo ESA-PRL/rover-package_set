@@ -62,11 +62,11 @@ version_control:
   - drivers/telemetry_telecommand:
     type: git
     url: https://github.com/ESA-PRL/drivers-telemetry_telecommand.git
-    branch: master
+    branch: ActivityInterpreter
   - drivers/orogen/telemetry_telecommand:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-telemetry_telecommand.git
-    branch: master
+    branch: ActivityInterpreter
   - drivers/orogen/camera_trigger:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-camera_trigger.git
@@ -86,7 +86,7 @@ version_control:
   - control/orogen/pancam_360:
     type: git
     url: https://github.com/ESA-PRL/control-orogen-pancam_360.git
-    branch: master
+    branch: RemoteOperations
   - control/generic_rover_manoeuvre:
     type: git
     url: https://github.com/ESA-PRL/control-generic_rover_manoeuvre.git
