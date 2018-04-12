@@ -13,6 +13,7 @@ orogen_package "perception/orogen/cartographer"
 
 orogen_package "perception/orogen/viso2"
 orogen_package "perception/orogen/viso2_with_imu"
+orogen_package "perception/orogen/viso2_evaluation"
 
 cmake_package "perception/shutter_controller"
 orogen_package "perception/orogen/shutter_controller"

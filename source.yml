@@ -179,6 +179,10 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/perception-orogen-viso2_with_imu.git
     branch: master
+  - perception/orogen/viso2_evaluation:
+    type: git
+    url: https://github.com/ESA-PRL/perception-orogen-viso2_evaluation.git
+    branch: master
   - planning/path_planning:
     type: git
     url: https://github.com/ESA-PRL/planning-path_planning.git
