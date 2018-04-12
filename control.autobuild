@@ -18,6 +18,7 @@ orogen_package "control/orogen/locomotion_switcher"
 orogen_package "control/orogen/waypoint_navigation"
 
 orogen_package "control/orogen/slippage_estimator"
+orogen_package "control/orogen/fdir"
 
 orogen_package "control/orogen/gps_heading"
 

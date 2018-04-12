@@ -131,6 +131,10 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/control-orogen-slippage_estimator.git
     branch: master
+  - control/orogen/fdir:
+    type: git
+    url: https://github.com/ESA-PRL/control-orogen-fdir.git
+    branch: master
   - drivers/orogen/gnss_trimble:
     type: git
     url: https://github.com/rock-drivers/drivers-orogen-gnss_trimble.git
