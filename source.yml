@@ -215,6 +215,14 @@ version_control:
     type: git
     url: https://github.com/ESA-PRL/perception-orogen-traversability.git
     branch: master
+  - control/orc_module:
+    type: git
+    url: https://github.com/ESA-PRL/control-orc_module.git
+    branch: master
+  - control/orogen/orc_module:
+    type: git
+    url: https://github.com/ESA-PRL/control-orogen-orc_module.git
+    branch: master
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
 # Precedence is given by the order they are stated in the manifest.
