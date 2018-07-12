@@ -33,17 +33,13 @@ import_package 'drivers/pcan_pcie_mini' do |pkg|
 
         in_dir (srcdir) do
             run('install', 'sudo make install ')
-            # run('install', 'sudo modprobe pcan')
+
+            # cannot do modprobe in docker
+            if (not ENV.has_key?('RUNNING_IN_DOCKER')) or (ENV['RUNNING_IN_DOCKER'] == 'false')
+                run('install', 'sudo modprobe pcan')
+            end
+
         end
-
-        #include_install_prefix = File.join(prefix, "include", name.split('/')[1])
-        #FileUtils.mkdir_p include_install_prefix
-
-        #FileUtils.install(File.join(srcdir, "lib","libpcan.h"), include_install_prefix)
-        #FileUtils.install(File.join(srcdir, "driver","pcan.h"), include_install_prefix)
-
-        #FileUtils.mkdir_p File.join(prefix, "lib")
-        #FileUtils.install(File.join(srcdir, "lib","libpcan.so"), File.join(prefix, "lib"))
 
         message "Installed MINI PCI Express package"
     end
@@ -119,4 +115,3 @@ orogen_package "drivers/orogen/ptu_directedperception"
 
 cmake_package "drivers/gnss_trimble"
 orogen_package "drivers/orogen/gnss_trimble"
-
