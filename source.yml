@@ -235,37 +235,46 @@ overrides:
   - drivers/orogen/imu_stim300:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-imu_stim300.git
+    push_to: https://github.com/ESA-PRL/drivers-orogen-imu_stim300.git
     branch: master
   - drivers/orogen/ptu_directedperception:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-ptu_directedperception.git
+    push_to: https://github.com/ESA-PRL/drivers-orogen-ptu_directedperception.git
     branch: master
   - drivers/orogen/tofcamera_mesasr:
     type: git
     url: https://github.com/ESA-PRL/drivers-orogen-tofcamera_mesasr.git
+    push_to: https://github.com/ESA-PRL/drivers-orogen-tofcamera_mesasr.git
     branch: master
   - control/waypoint_navigation:
     type: git
     url: https://github.com/ESA-PRL/control-waypoint_navigation.git
+    push_to: https://github.com/ESA-PRL/control-waypoint_navigation.git
     branch: master
   - control/orogen/waypoint_navigation:
     type: git
     url: https://github.com/ESA-PRL/control-orogen-waypoint_navigation.git
+    push_to: https://github.com/ESA-PRL/control-orogen-waypoint_navigation.git
     branch: master
   - perception/orogen/viso2:
     type: git
     url: https://github.com/ESA-PRL/perception-orogen-viso2.git
+    push_to: https://github.com/ESA-PRL/perception-orogen-viso2.git
     branch: master
   - slam/orogen/threed_odometry:
     type: git
     url: https://github.com/ESA-PRL/slam-orogen-threed_odometry
+    push_to: https://github.com/ESA-PRL/slam-orogen-threed_odometry
     branch: master
   - perception/stereo:
     type: git
     url: https://github.com/ESA-PRL/perception-stereo.git
+    push_to: https://github.com/ESA-PRL/perception-stereo.git
     branch: master
   - perception/orogen/stereo:
     type: git
     url: https://github.com/ESA-PRL/perception-orogen-stereo.git
+    push_to: https://github.com/ESA-PRL/perception-orogen-stereo.git
     branch: master
 
