@@ -1,9 +1,8 @@
-# This file specifies the packages of ESA PRL rover package set which can be seen as being drivers
-# When the source.yml contains the repository info, you should specify here how that package can be build
+# When the source.yml contains the repository info, you should specify here how that package can be build.
+# The packages that are commented out are already defined in the same way in the original rock package set.
 
-# The following drivers might be overridden by the original def in rock package set.
-cmake_package "perception/stereo"
-orogen_package "perception/orogen/stereo"
+#cmake_package "perception/stereo"
+#orogen_package "perception/orogen/stereo"
 
 cmake_package "perception/dem_generation"
 orogen_package "perception/orogen/dem_generation"
@@ -11,7 +10,7 @@ orogen_package "perception/orogen/dem_generation"
 cmake_package "perception/cartographer"
 orogen_package "perception/orogen/cartographer"
 
-orogen_package "perception/orogen/viso2"
+#orogen_package "perception/orogen/viso2"
 orogen_package "perception/orogen/viso2_with_imu"
 orogen_package "perception/orogen/viso2_evaluation"
 

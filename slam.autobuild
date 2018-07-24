@@ -1,4 +1,7 @@
-cmake_package "slam/threed_odometry"
-orogen_package "slam/orogen/threed_odometry"
+# When the source.yml contains the repository info, you should specify here how that package can be build.
+# The packages that are commented out are already defined in the same way in the original rock package set.
+
+#cmake_package "slam/threed_odometry"
+#orogen_package "slam/orogen/threed_odometry"
 #cmake_package "slam/ga_slam"
 #orogen_package "slam/orogen/ga_slam"
