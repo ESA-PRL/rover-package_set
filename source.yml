@@ -25,7 +25,7 @@ version_control:
     branch: master
   - drivers/pcan_pcie_mini:
     type: archive
-    url: http://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-8.5.1.tar.gz
+    url: http://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-8.6.0.tar.gz
     update_cached_file: false
   - drivers/platform_driver:
     type: git
