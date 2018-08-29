@@ -53,21 +53,22 @@ import_package 'drivers/activeMQ' do |pkg|
     def pkg.prepare
         if !has_activemq_api? # defined in init.rb
             message "Configuring activeMQ package..."
-            super
-            in_dir(srcdir) do
+            in_dir(File.join(srcdir,"activemq-cpp")) do
+                run("create_configure","./autogen.sh")
                 run("prepare_configure","./configure", "--prefix=#{Autobuild.prefix}")
+                message "Configured activeMQ package"
             end
             isolate_errors do
                 build
+                install
                 progress_done
-                message "Configured activeMQ package"
             end
         end
     end
 
     def pkg.build
         message "Building activeMQ package..."
-        in_dir(srcdir) do
+        in_dir(File.join(srcdir,"activemq-cpp")) do
             run("build", Autobuild.tool(:make))
         end
         message "Built activeMQ package"
@@ -76,14 +77,12 @@ import_package 'drivers/activeMQ' do |pkg|
     def pkg.install
         message "Installing activeMQ package..."
         super
-        in_dir(srcdir) do
+        in_dir(File.join(srcdir,"activemq-cpp")) do
             run("install", "make install")
-        end
-        in_dir(srcdir) do
-            run("Clean-up", "sed -i -e 's/^Libs.private/\#Libs.private/g' activemq-cpp.pc")
+            run("bugfix", "sed -i -e 's/^Libs.private/\#Libs.private/g' activemq-cpp.pc")
             message "Commented out faulty line in activemq-cpp.pc"
         end
-        FileUtils.install(File.join(srcdir, "activemq-cpp.pc"), File.join(prefix, 'lib', "pkgconfig", "activemq-cpp.pc"))
+        FileUtils.install(File.join(srcdir, "activemq-cpp", "activemq-cpp.pc"), File.join(prefix, 'lib', "pkgconfig", "activemq-cpp.pc"))
         message "Installed activeMQ package"
     end
 end

@@ -36,9 +36,9 @@ version_control:
     url: https://github.com/ESA-PRL/drivers-orogen-platform_driver.git
     branch: master
   - drivers/activeMQ:
-    type: archive
-    url: http://mirror.stjschools.org/public/apache/activemq/activemq-cpp/3.9.4/activemq-cpp-library-3.9.4-src.tar.gz
-    update_cached_file: false
+    type: git
+    url: https://github.com/apache/activemq-cpp
+    branch: master
   - drivers/temperature:
     type: git
     url: https://github.com/ESA-PRL/drivers-temperature.git
