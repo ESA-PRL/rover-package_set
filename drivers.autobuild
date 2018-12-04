@@ -112,3 +112,5 @@ orogen_package "drivers/orogen/camera_bb3"
 
 cmake_package "drivers/gnss_trimble"
 orogen_package "drivers/orogen/gnss_trimble"
+
+orogen_package "drivers/orogen/autonav_interface"
