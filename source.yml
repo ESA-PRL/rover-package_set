@@ -237,8 +237,12 @@ version_control:
 overrides:
   # The following packages are defined somewhere in the ROCK package sets, but we want to override their branch by default
   - drivers/controldev:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-controldev
     branch: onedimensional
   - drivers/orogen/controldev:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-controldev
     branch: onedimensional
   - drivers/orogen/imu_stim300:
     type: git
