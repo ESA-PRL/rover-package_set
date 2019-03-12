@@ -25,7 +25,7 @@ import_package 'drivers/pcan_pcie_mini' do |pkg|
         end
         message "Built MINI PCI Express package"
     end
-    
+
     def pkg.install
         message "Installing MINI PCI Express package..."
 
@@ -93,6 +93,9 @@ orogen_package "drivers/orogen/platform_driver"
 
 cmake_package "drivers/temperature"
 orogen_package "drivers/orogen/temperature"
+
+cmake_package "drivers/inclinometer_solar2"
+orogen_package "drivers/orogen/inclinometer_solar2"
 
 cmake_package "drivers/telemetry_telecommand"
 orogen_package "drivers/orogen/telemetry_telecommand"
