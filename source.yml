@@ -13,15 +13,15 @@ version_control:
 #     branch: master
   - bundles/rover:
     type: git
-    url: https://github.com/ESA-PRL/bundles-rover.git
+    url: https://github.com/esa-prl/bundles-rover.git
     branch: master
   - simulation/vrep:
     type: git
-    url: https://github.com/ESA-PRL/simulation-vrep.git
+    url: https://github.com/esa-prl/simulation-vrep.git
     branch: master
   - simulation/orogen/simulation_vrep:
     type: git
-    url: https://github.com/ESA-PRL/simulation-orogen-simulation_vrep.git
+    url: https://github.com/esa-prl/simulation-orogen-simulation_vrep.git
     branch: master
   - drivers/pcan_pcie_mini:
     type: archive
@@ -33,11 +33,11 @@ version_control:
     branch: master
   - drivers/platform_driver:
     type: git
-    url: https://github.com/ESA-PRL/drivers-platform_driver.git
+    url: https://github.com/esa-prl/drivers-platform_driver.git
     branch: master
   - drivers/orogen/platform_driver:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-platform_driver.git
+    url: https://github.com/esa-prl/drivers-orogen-platform_driver.git
     branch: master
   - drivers/activeMQ:
     type: git
@@ -45,19 +45,19 @@ version_control:
     branch: master
   - drivers/temperature:
     type: git
-    url: https://github.com/ESA-PRL/drivers-temperature.git
+    url: https://github.com/esa-prl/drivers-temperature.git
     branch: master
   - drivers/orogen/temperature:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-temperature.git
+    url: https://github.com/esa-prl/drivers-orogen-temperature.git
     branch: master
   - drivers/dsp1760:
     type: git
-    url: https://github.com/ESA-PRL/drivers-dsp1760.git
+    url: https://github.com/esa-prl/drivers-dsp1760.git
     branch: master
   - drivers/orogen/dsp1760:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-dsp1760.git
+    url: https://github.com/esa-prl/drivers-orogen-dsp1760.git
     branch: master
   - drivers/orogen/velodyne_lidar:
     type: git
@@ -65,15 +65,15 @@ version_control:
     branch: master
   - drivers/telemetry_telecommand:
     type: git
-    url: https://github.com/ESA-PRL/drivers-telemetry_telecommand.git
+    url: https://github.com/esa-prl/drivers-telemetry_telecommand.git
     branch: master
   - drivers/orogen/telemetry_telecommand:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-telemetry_telecommand.git
+    url: https://github.com/esa-prl/drivers-orogen-telemetry_telecommand.git
     branch: master
   - drivers/orogen/camera_trigger:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-camera_trigger.git
+    url: https://github.com/esa-prl/drivers-orogen-camera_trigger.git
     branch: master
   - drivers/orogen/camera_bb2:
     type: git
@@ -81,63 +81,63 @@ version_control:
     branch: master
   - drivers/orogen/camera_bb3:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-camera_bb3.git
+    url: https://github.com/esa-prl/drivers-orogen-camera_bb3.git
     branch: master
   - control/orogen/pancam_panorama:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-pancam_panorama.git
+    url: https://github.com/esa-prl/control-orogen-pancam_panorama.git
     branch: master
   - control/orogen/pancam_360:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-pancam_360.git
+    url: https://github.com/esa-prl/control-orogen-pancam_360.git
     branch: RemoteOperations
   - control/generic_rover_manoeuvre:
     type: git
-    url: https://github.com/ESA-PRL/control-generic_rover_manoeuvre.git
+    url: https://github.com/esa-prl/control-generic_rover_manoeuvre.git
     branch: master
   - control/locomotion_control:
     type: git
-    url: https://github.com/ESA-PRL/control-locomotion_control.git
+    url: https://github.com/esa-prl/control-locomotion_control.git
     branch: master
   - exoter/exoter_kinematics:
     type: git
-    url: https://github.com/ESA-PRL/exoter-exoter_kinematics.git
+    url: https://github.com/esa-prl/exoter-exoter_kinematics.git
     branch: master
   - control/orogen/locomotion_control:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-locomotion_control.git
+    url: https://github.com/esa-prl/control-orogen-locomotion_control.git
     branch: master
   - control/orogen/wheelwalking_control:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-wheelwalking_control.git
+    url: https://github.com/esa-prl/control-orogen-wheelwalking_control.git
     branch: master
   - control/orogen/ptu_control:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-ptu_control.git
+    url: https://github.com/esa-prl/control-orogen-ptu_control.git
     branch: master
   - control/orogen/motion_translator:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-motion_translator.git
+    url: https://github.com/esa-prl/control-orogen-motion_translator.git
     branch: master
   - control/orogen/command_arbiter:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-command_arbiter.git
+    url: https://github.com/esa-prl/control-orogen-command_arbiter.git
     branch: master  
   - control/orogen/locomotion_switcher:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-locomotion_switcher.git
+    url: https://github.com/esa-prl/control-orogen-locomotion_switcher.git
     branch: master
   - control/orogen/gps_heading:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-gps_heading.git
+    url: https://github.com/esa-prl/control-orogen-gps_heading.git
     branch: master
   - control/orogen/slippage_estimator:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-slippage_estimator.git
+    url: https://github.com/esa-prl/control-orogen-slippage_estimator.git
     branch: master
   - control/orogen/fdir:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-fdir.git
+    url: https://github.com/esa-prl/control-orogen-fdir.git
     branch: master
   - drivers/orogen/gnss_trimble:
     type: git
@@ -149,55 +149,55 @@ version_control:
     branch: master
   - perception/shutter_controller:
     type: git
-    url: https://github.com/ESA-PRL/perception-shutter_controller.git
+    url: https://github.com/esa-prl/perception-shutter_controller.git
     branch: master
   - perception/orogen/shutter_controller:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-shutter_controller.git
+    url: https://github.com/esa-prl/perception-orogen-shutter_controller.git
     branch: master
   - perception/hazard_detector:
     type: git
-    url: https://github.com/ESA-PRL/perception-hazard_detector.git
+    url: https://github.com/esa-prl/perception-hazard_detector.git
     branch: master
   - perception/orogen/hazard_detector:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-hazard_detector.git
+    url: https://github.com/esa-prl/perception-orogen-hazard_detector.git
     branch: master
   - perception/dem_generation:
     type: git
-    url: https://github.com/ESA-PRL/perception-dem_generation.git
+    url: https://github.com/esa-prl/perception-dem_generation.git
     branch: master
   - perception/orogen/dem_generation:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-dem_generation.git
+    url: https://github.com/esa-prl/perception-orogen-dem_generation.git
     branch: master
   - perception/cartographer:
     type: git
-    url: https://github.com/ESA-PRL/perception-cartographer.git
+    url: https://github.com/esa-prl/perception-cartographer.git
     branch: master
   - perception/orogen/cartographer:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-cartographer.git
+    url: https://github.com/esa-prl/perception-orogen-cartographer.git
     branch: master
   - perception/orogen/viso2_with_imu:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-viso2_with_imu.git
+    url: https://github.com/esa-prl/perception-orogen-viso2_with_imu.git
     branch: master
   - perception/orogen/viso2_evaluation:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-viso2_evaluation.git
+    url: https://github.com/esa-prl/perception-orogen-viso2_evaluation.git
     branch: master
   - planning/path_planning:
     type: git
-    url: https://github.com/ESA-PRL/planning-path_planning.git
+    url: https://github.com/esa-prl/planning-path_planning.git
     branch: master
   - planning/orogen/path_planning:
     type: git
-    url: https://github.com/ESA-PRL/planning-orogen-path_planning.git
+    url: https://github.com/esa-prl/planning-orogen-path_planning.git
     branch: master
   - rover/orogen/rover_deployments:
     type: git
-    url: https://github.com/ESA-PRL/rover-orogen-rover_deployments.git
+    url: https://github.com/esa-prl/rover-orogen-rover_deployments.git
     branch: master
   - slam/threed_odometry:
     type: git
@@ -205,27 +205,27 @@ version_control:
     branch: master
   - slam/ga_slam:
     type: git
-    url: https://github.com/ESA-PRL/slam-ga_slam.git
+    url: https://github.com/esa-prl/slam-ga_slam.git
     branch: master
   - slam/orogen/ga_slam:
     type: git
-    url: https://github.com/ESA-PRL/slam-orogen-ga_slam.git
+    url: https://github.com/esa-prl/slam-orogen-ga_slam.git
     branch: master
   - perception/traversability:
     type: git
-    url: https://github.com/ESA-PRL/perception-traversability.git
+    url: https://github.com/esa-prl/perception-traversability.git
     branch: master
   - perception/orogen/traversability:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-traversability.git
+    url: https://github.com/esa-prl/perception-orogen-traversability.git
     branch: master
   - control/orc_module:
     type: git
-    url: https://github.com/ESA-PRL/control-orc_module.git
+    url: https://github.com/esa-prl/control-orc_module.git
     branch: master
   - control/orogen/orc_module:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-orc_module.git
+    url: https://github.com/esa-prl/control-orogen-orc_module.git
     branch: master
   - drivers/orogen/autonav_interface:
     type: git
@@ -238,55 +238,55 @@ overrides:
   # The following packages are defined somewhere in the ROCK package sets, but we want to override their branch by default
   - drivers/controldev:
     type: git
-    url: https://github.com/ESA-PRL/drivers-controldev
+    url: https://github.com/esa-prl/drivers-controldev
     branch: onedimensional
   - drivers/orogen/controldev:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-controldev
+    url: https://github.com/esa-prl/drivers-orogen-controldev
     branch: onedimensional
   - drivers/orogen/imu_stim300:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-imu_stim300.git
-    push_to: https://github.com/ESA-PRL/drivers-orogen-imu_stim300.git
+    url: https://github.com/esa-prl/drivers-orogen-imu_stim300.git
+    push_to: https://github.com/esa-prl/drivers-orogen-imu_stim300.git
     branch: master
   - drivers/orogen/ptu_directedperception:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-ptu_directedperception.git
-    push_to: https://github.com/ESA-PRL/drivers-orogen-ptu_directedperception.git
+    url: https://github.com/esa-prl/drivers-orogen-ptu_directedperception.git
+    push_to: https://github.com/esa-prl/drivers-orogen-ptu_directedperception.git
     branch: master
   - drivers/orogen/tofcamera_mesasr:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-tofcamera_mesasr.git
-    push_to: https://github.com/ESA-PRL/drivers-orogen-tofcamera_mesasr.git
+    url: https://github.com/esa-prl/drivers-orogen-tofcamera_mesasr.git
+    push_to: https://github.com/esa-prl/drivers-orogen-tofcamera_mesasr.git
     branch: master
   - control/waypoint_navigation:
     type: git
-    url: https://github.com/ESA-PRL/control-waypoint_navigation.git
-    push_to: https://github.com/ESA-PRL/control-waypoint_navigation.git
+    url: https://github.com/esa-prl/control-waypoint_navigation.git
+    push_to: https://github.com/esa-prl/control-waypoint_navigation.git
     branch: master
   - control/orogen/waypoint_navigation:
     type: git
-    url: https://github.com/ESA-PRL/control-orogen-waypoint_navigation.git
-    push_to: https://github.com/ESA-PRL/control-orogen-waypoint_navigation.git
+    url: https://github.com/esa-prl/control-orogen-waypoint_navigation.git
+    push_to: https://github.com/esa-prl/control-orogen-waypoint_navigation.git
     branch: master
   - perception/orogen/viso2:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-viso2.git
-    push_to: https://github.com/ESA-PRL/perception-orogen-viso2.git
+    url: https://github.com/esa-prl/perception-orogen-viso2.git
+    push_to: https://github.com/esa-prl/perception-orogen-viso2.git
     branch: master
   - slam/orogen/threed_odometry:
     type: git
-    url: https://github.com/ESA-PRL/slam-orogen-threed_odometry
-    push_to: https://github.com/ESA-PRL/slam-orogen-threed_odometry
+    url: https://github.com/esa-prl/slam-orogen-threed_odometry
+    push_to: https://github.com/esa-prl/slam-orogen-threed_odometry
     branch: master
   - perception/stereo:
     type: git
-    url: https://github.com/ESA-PRL/perception-stereo.git
-    push_to: https://github.com/ESA-PRL/perception-stereo.git
+    url: https://github.com/esa-prl/perception-stereo.git
+    push_to: https://github.com/esa-prl/perception-stereo.git
     branch: master
   - perception/orogen/stereo:
     type: git
-    url: https://github.com/ESA-PRL/perception-orogen-stereo.git
-    push_to: https://github.com/ESA-PRL/perception-orogen-stereo.git
+    url: https://github.com/esa-prl/perception-orogen-stereo.git
+    push_to: https://github.com/esa-prl/perception-orogen-stereo.git
     branch: master
 
