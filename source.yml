@@ -219,14 +219,6 @@ version_control:
     type: git
     url: https://github.com/esa-prl/perception-orogen-traversability.git
     branch: master
-  - control/orc_module:
-    type: git
-    url: https://github.com/esa-prl/control-orc_module.git
-    branch: master
-  - control/orogen/orc_module:
-    type: git
-    url: https://github.com/esa-prl/control-orogen-orc_module.git
-    branch: master
   - drivers/orogen/autonav_interface:
     type: git
     url: https://gitlab.esa.int/LevinGerdes/drivers-orogen-autonav_interface.git

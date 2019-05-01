@@ -22,6 +22,3 @@ orogen_package "control/orogen/gps_heading"
 
 orogen_package "control/orogen/pancam_panorama"
 orogen_package "control/orogen/pancam_360"
-
-cmake_package "control/orc_module"
-orogen_package "control/orogen/orc_module"
