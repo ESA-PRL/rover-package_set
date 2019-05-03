@@ -221,7 +221,7 @@ version_control:
     branch: master
   - drivers/orogen/autonav_interface:
     type: git
-    url: https://gitlab.esa.int/LevinGerdes/drivers-orogen-autonav_interface.git
+    url: https://gitlab.esa.int/prl/drivers-orogen-autonav_interface.git
     branch: master
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
