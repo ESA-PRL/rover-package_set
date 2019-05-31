@@ -86,6 +86,8 @@ import_package 'drivers/activeMQ' do |pkg|
         message "Installed activeMQ package"
     end
 end
+cmake_package "drivers/soem"
+
 cmake_package "drivers/activeMQ"
 
 cmake_package "drivers/platform_driver"

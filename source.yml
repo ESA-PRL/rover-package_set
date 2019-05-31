@@ -29,8 +29,8 @@ version_control:
     update_cached_file: false
   - drivers/soem:
     type: git
-    url: https://github.com/OpenEtherCATsociety/SOEM.git
-    branch: master
+    url: https://github.com/esa-prl/soem
+    branch: pkg-config
   - drivers/platform_driver:
     type: git
     url: https://github.com/esa-prl/drivers-platform_driver.git
