@@ -195,9 +195,9 @@ version_control:
     type: git
     url: https://github.com/esa-prl/planning-orogen-path_planning.git
     branch: master
-  - rover/orogen/rover_deployments:
+  - deployments/orogen/rover_deployments:
     type: git
-    url: https://github.com/esa-prl/rover-orogen-rover_deployments.git
+    url: https://github.com/esa-prl/deployments-orogen-rover_deployments.git
     branch: master
   - slam/threed_odometry:
     type: git
