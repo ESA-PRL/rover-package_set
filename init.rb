@@ -1,14 +1,7 @@
-def has_pcan_api?
-    include_file = File.join("/usr","include","pcan.h")
-    lib = File.join("/usr","lib","libpcan.so")
-    File.exists?(include_file) && File.exists?(lib)
-end
-
 def has_activemq_api?
     file = File.join(ENV['HOME'],"rock","install","lib","pkgconfig","activemq-cpp.pc")
     File.exists?(file)
 end
-
 
 #def create_metapackages
 #    Autoproj.current_package_set().each_package do |pkg|

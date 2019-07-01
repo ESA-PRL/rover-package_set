@@ -23,22 +23,6 @@ version_control:
     type: git
     url: https://github.com/esa-prl/simulation-orogen-simulation_vrep.git
     branch: master
-  - drivers/pcan_pcie_mini:
-    type: archive
-    url: http://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-8.6.0.tar.gz
-    update_cached_file: false
-  - drivers/soem:
-    type: git
-    url: https://github.com/esa-prl/soem
-    branch: pkg-config
-  - drivers/platform_driver:
-    type: git
-    url: https://github.com/esa-prl/drivers-platform_driver.git
-    branch: master
-  - drivers/orogen/platform_driver:
-    type: git
-    url: https://github.com/esa-prl/drivers-orogen-platform_driver.git
-    branch: master
   - drivers/activeMQ:
     type: git
     url: https://github.com/apache/activemq-cpp
