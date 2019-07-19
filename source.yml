@@ -95,10 +95,6 @@ version_control:
     type: git
     url: https://github.com/esa-prl/control-orogen-wheelwalking_control.git
     branch: master
-  - control/orogen/ptu_control:
-    type: git
-    url: https://github.com/esa-prl/control-orogen-ptu_control.git
-    branch: master
   - control/orogen/motion_translator:
     type: git
     url: https://github.com/esa-prl/control-orogen-motion_translator.git
