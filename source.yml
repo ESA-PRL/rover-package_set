@@ -225,11 +225,6 @@ overrides:
     url: https://github.com/esa-prl/drivers-orogen-imu_stim300.git
     push_to: https://github.com/esa-prl/drivers-orogen-imu_stim300.git
     branch: master
-  - drivers/orogen/ptu_directedperception:
-    type: git
-    url: https://github.com/esa-prl/drivers-orogen-ptu_directedperception.git
-    push_to: https://github.com/esa-prl/drivers-orogen-ptu_directedperception.git
-    branch: master
   - drivers/orogen/tofcamera_mesasr:
     type: git
     url: https://github.com/esa-prl/drivers-orogen-tofcamera_mesasr.git

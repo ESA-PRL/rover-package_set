@@ -67,7 +67,6 @@ orogen_package "drivers/orogen/camera_trigger"
 #orogen_package "drivers/orogen/camera_firewire"
 orogen_package "drivers/orogen/camera_bb2"
 orogen_package "drivers/orogen/camera_bb3"
-#orogen_package "drivers/orogen/ptu_directedperception"
 
 cmake_package "drivers/gnss_trimble"
 orogen_package "drivers/orogen/gnss_trimble"
