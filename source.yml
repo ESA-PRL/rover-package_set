@@ -187,9 +187,25 @@ version_control:
     type: git
     url: https://github.com/esa-prl/slam-ga_slam.git
     branch: master
+  - slam/ga_slam_cereal:
+    type: git
+    url: https://github.com/esa-prl/slam-ga_slam_cereal.git
+    branch: master
   - slam/orogen/ga_slam:
     type: git
     url: https://github.com/esa-prl/slam-orogen-ga_slam.git
+    branch: master
+  - control/orogen/gps_transformer:
+    type: git
+    url: https://github.com/esa-prl/control-orogen-gps_transformer.git
+    branch: master
+  - control/orogen/pancam_transformer:
+    type: git
+    url: https://github.com/esa-prl/control-orogen-pancam_transformer.git
+    branch: master
+  - control/orogen/orbiter_preprocessing:
+    type: git
+    url: https://github.com/esa-prl/control-orogen-orbiter_preprocessing.git
     branch: master
   - perception/traversability:
     type: git

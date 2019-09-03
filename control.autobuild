@@ -21,3 +21,8 @@ orogen_package "control/orogen/gps_heading"
 
 orogen_package "control/orogen/pancam_panorama"
 orogen_package "control/orogen/pancam_360"
+
+orogen_package "control/orogen/gps_transformer"
+orogen_package "control/orogen/pancam_transformer"
+orogen_package "control/orogen/orbiter_preprocessing"
+
