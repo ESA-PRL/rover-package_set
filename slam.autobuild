@@ -3,6 +3,5 @@
 
 #cmake_package "slam/threed_odometry"
 #orogen_package "slam/orogen/threed_odometry"
-cmake_package "slam/ga_slam"
-cmake_package "slam/ga_slam_cereal"
-orogen_package "slam/orogen/ga_slam"
+#cmake_package "slam/ga_slam"
+#orogen_package "slam/orogen/ga_slam"
