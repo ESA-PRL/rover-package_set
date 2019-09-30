@@ -175,6 +175,10 @@ version_control:
     type: git
     url: https://github.com/esa-prl/planning-orogen-path_planning.git
     branch: master
+  - planning/orogen/cost_updating:
+    type: git
+    url: https://github.com/esa-prl/planning-orogen-cost_updating.git
+    branch: master
   - deployments/orogen/rover_deployments:
     type: git
     url: https://github.com/esa-prl/deployments-orogen-rover_deployments.git
