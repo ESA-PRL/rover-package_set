@@ -2,7 +2,7 @@ popt:
     debian, ubuntu: libpopt-dev
 
 apr1:
-    debian,ubuntu: libapr1-dev
+    debian, ubuntu: libapr1-dev
 
 sdl:
     debian, ubuntu: libsdl-net1.2
@@ -10,3 +10,11 @@ sdl:
 sdl-dev:
     debian, ubuntu: libsdl-net1.2-dev
 
+autoconf:
+    debian, ubuntu: autoconf
+
+automake:
+    debian, ubuntu: automake
+
+libtool:
+    debian, ubuntu: libtool
