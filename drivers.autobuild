@@ -10,45 +10,40 @@
 
 # Telemetry telecommand depends on this package
 import_package 'drivers/activeMQ' do |pkg|
-    #def pkg.buildstamp; "autobuild-stamp" end
-
-    def pkg.prepare
-        if !has_activemq_api? # defined in init.rb
-            message "Configuring activeMQ package..."
-            in_dir(File.join(srcdir,"activemq-cpp")) do
-                run("create_configure","./autogen.sh")
-                run("prepare_configure","./configure", "--prefix=#{Autobuild.prefix}")
-                message "Configured activeMQ package"
-            end
-            isolate_errors do
-                build
-                install
-                progress_done
-            end
+    def pkg.do_configure
+        in_dir(File.join(srcdir,"activemq-cpp")) do
+            run("create_configure","./autogen.sh")
+            run("prepare_configure","./configure", "--prefix=#{Autobuild.prefix}")
         end
     end
 
-    def pkg.build
-        message "Building activeMQ package..."
+    def pkg.do_build
         in_dir(File.join(srcdir,"activemq-cpp")) do
             run("build", Autobuild.tool(:make))
         end
-        message "Built activeMQ package"
     end
 
-    def pkg.install
-        message "Installing activeMQ package..."
-        super
+    def pkg.do_install
         in_dir(File.join(srcdir,"activemq-cpp")) do
             run("install", "make install")
             run("bugfix", "sed -i -e 's/^Libs.private/\#Libs.private/g' activemq-cpp.pc")
             message "Commented out faulty line in activemq-cpp.pc"
         end
         FileUtils.install(File.join(srcdir, "activemq-cpp", "activemq-cpp.pc"), File.join(prefix, 'lib', "pkgconfig", "activemq-cpp.pc"))
-        message "Installed activeMQ package"
+    end
+
+    pkg.post_install do
+        pkg.progress_start "configuring %s" do
+            pkg.do_configure
+        end
+        pkg.progress_start "building %s" do
+            pkg.do_build
+        end
+        pkg.progress_start "installing %s" do
+            pkg.do_install
+        end
     end
 end
-cmake_package "drivers/activeMQ"
 
 cmake_package "drivers/temperature"
 orogen_package "drivers/orogen/temperature"

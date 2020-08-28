@@ -1,8 +1,3 @@
-def has_activemq_api?
-    file = File.join(ENV['HOME'],"rock","install","lib","pkgconfig","activemq-cpp.pc")
-    File.exists?(file)
-end
-
 #def create_metapackages
 #    Autoproj.current_package_set().each_package do |pkg|
 #        meta_name = pkg.name.split("/").first
