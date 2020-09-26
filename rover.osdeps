@@ -1,6 +1,3 @@
-popt:
-    debian, ubuntu: libpopt-dev
-
 apr1:
     debian, ubuntu: libapr1-dev
 
