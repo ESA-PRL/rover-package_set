@@ -258,7 +258,7 @@ overrides:
     type: git
     url: https://github.com/esa-prl/perception-stereo.git
     push_to: https://github.com/esa-prl/perception-stereo.git
-    branch: master
+    branch: esa-prl
   - perception/orogen/stereo:
     type: git
     url: https://github.com/esa-prl/perception-orogen-stereo.git
