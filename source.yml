@@ -131,6 +131,10 @@ version_control:
     type: git
     url: https://github.com/rock-drivers/drivers-gnss_trimble.git
     branch: master
+  - drivers/udp:
+    type: git
+    url: https://github.com/esa-prl/drivers-udp.git
+    branch: master
   - perception/shutter_controller:
     type: git
     url: https://github.com/esa-prl/perception-shutter_controller.git

@@ -67,3 +67,5 @@ cmake_package "drivers/gnss_trimble"
 orogen_package "drivers/orogen/gnss_trimble"
 
 #orogen_package "drivers/orogen/autonav_interface" # not public
+
+cmake_package "drivers/udp"
