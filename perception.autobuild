@@ -22,3 +22,6 @@ orogen_package "perception/orogen/hazard_detector"
 
 cmake_package "perception/traversability"
 orogen_package "perception/orogen/traversability"
+
+cmake_package "perception/spartan"
+orogen_package "perception/orogen/spartan" 
