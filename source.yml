@@ -43,10 +43,6 @@ version_control:
     type: git
     url: https://github.com/esa-prl/drivers-orogen-dsp1760.git
     branch: master
-  - drivers/orogen/velodyne_lidar:
-    type: git
-    url: https://github.com/rock-drivers/drivers-orogen-velodyne_lidar.git
-    branch: master
   - drivers/telemetry_telecommand:
     type: git
     url: https://github.com/esa-prl/drivers-telemetry_telecommand.git
@@ -154,7 +150,7 @@ version_control:
   - perception/orogen/dem_generation:
     type: git
     url: https://github.com/esa-prl/perception-orogen-dem_generation.git
-    branch: master
+    branch: focal
   - perception/cartographer:
     type: git
     url: https://github.com/esa-prl/perception-cartographer.git
@@ -162,7 +158,7 @@ version_control:
   - perception/orogen/cartographer:
     type: git
     url: https://github.com/esa-prl/perception-orogen-cartographer.git
-    branch: master
+    branch: focal
   - perception/orogen/viso2_with_imu:
     type: git
     url: https://github.com/esa-prl/perception-orogen-viso2_with_imu.git
@@ -275,5 +271,19 @@ overrides:
     type: git
     url: https://github.com/esa-prl/perception-orogen-stereo.git
     push_to: https://github.com/esa-prl/perception-orogen-stereo.git
+    branch: focal
+  - drivers/velodyne_lidar:
+    type: git
+    url: https://github.com/esa-prl/drivers-velodyne_lidar.git
+    push_to: https://github.com/esa-prl/drivers-velodyne_lidar.git
+    branch: focal
+  - drivers/orogen/camera_firewire:
+    type: git
+    url: https://github.com/esa-prl/drivers-orogen-camera_firewire.git
+    push_to: https://github.com/esa-prl/drivers-orogen-camera_firewire.git
     branch: master
-
+  - slam/envire:
+    type: git
+    url: https://github.com/esa-prl/slam-envire.git
+    push_to: https://github.com/esa-prl/slam-envire.git
+    branch: focal
