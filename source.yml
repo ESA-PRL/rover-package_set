@@ -207,6 +207,14 @@ version_control:
     type: git
     url: https://github.com/esa-prl/perception-orogen-traversability.git
     branch: master
+  - perception/odometry_fusion:
+    type: git
+    url: https://github.com/esa-prl/perception-odometry_fusion.git
+    branch: master
+  - perception/orogen/odometry_fusion:
+    type: git
+    url: https://github.com/esa-prl/perception-orogen-odometry_fusion.git
+    branch: master
     #- drivers/orogen/autonav_interface:
     #  type: git
     #  url: https://gitlab.esa.int/prl/drivers-orogen-autonav_interface.git
