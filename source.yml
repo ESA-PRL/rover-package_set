@@ -210,11 +210,11 @@ version_control:
   - perception/odometry_fusion:
     type: git
     url: https://github.com/esa-prl/perception-odometry_fusion.git
-    branch: master
+    branch: main
   - perception/orogen/odometry_fusion:
     type: git
     url: https://github.com/esa-prl/perception-orogen-odometry_fusion.git
-    branch: master
+    branch: main
     #- drivers/orogen/autonav_interface:
     #  type: git
     #  url: https://gitlab.esa.int/prl/drivers-orogen-autonav_interface.git
