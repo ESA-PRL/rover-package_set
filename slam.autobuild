@@ -8,8 +8,5 @@ cmake_package "slam/ga_slam"
 orogen_package "slam/orogen/ga_slam"
 
 cmake_package "slam/ga_slam_cereal" do |pkg|
-    puts pkg.srcdir.inspect
-    #run "export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:/opt/ros/kinetic"
-    # puts File.join(pkg.srcdir,"/../grid_map/grid_map_core")
     env_add 'CMAKE_PREFIX_PATH', "/opt/ros/kinetic"
 end
