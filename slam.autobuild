@@ -3,6 +3,13 @@
 
 #cmake_package "slam/threed_odometry"
 #orogen_package "slam/orogen/threed_odometry"
+
 cmake_package "slam/ga_slam"
-cmake_package "slam/ga_slam_cereal"
 orogen_package "slam/orogen/ga_slam"
+
+cmake_package "slam/ga_slam_cereal" do |pkg|
+    puts pkg.srcdir.inspect
+    #run "export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:/opt/ros/kinetic"
+    # puts File.join(pkg.srcdir,"/../grid_map/grid_map_core")
+    env_add 'CMAKE_PREFIX_PATH', "/opt/ros/kinetic"
+end
