@@ -16,5 +16,5 @@ automake:
 libtool:
     debian, ubuntu: libtool
 
-ros-kinetic-grid-map-core:
+external/grid_map_core:
     debian, ubuntu: ros-kinetic-grid-map-core
