@@ -206,7 +206,7 @@ version_control:
   - slam/ga_slam:
     type: git
     url: https://github.com/esa-prl/slam-ga_slam.git
-    branch: master
+    branch: update_dependencies
   - slam/ga_slam_cereal:
     type: git
     url: https://github.com/esa-prl/slam-ga_slam_cereal
@@ -214,7 +214,7 @@ version_control:
   - slam/orogen/ga_slam:
     type: git
     url: https://github.com/esa-prl/slam-orogen-ga_slam.git
-    branch: master
+    branch: add_dependencies
   - perception/traversability:
     type: git
     url: https://github.com/esa-prl/perception-traversability.git
