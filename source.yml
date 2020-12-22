@@ -134,7 +134,7 @@ version_control:
   - control/orogen/orbiter_preprocessing:
     type: git
     url: https://github.com/esa-prl/control-orogen-orbiter_preprocessing
-    branch: upgrade_pcl_to_1.8
+    branch: master
   - drivers/orogen/gnss_trimble:
     type: git
     url: https://github.com/rock-drivers/drivers-orogen-gnss_trimble.git
@@ -206,7 +206,7 @@ version_control:
   - slam/ga_slam:
     type: git
     url: https://github.com/esa-prl/slam-ga_slam.git
-    branch: update_dependencies
+    branch: master
   - slam/ga_slam_cereal:
     type: git
     url: https://github.com/esa-prl/slam-ga_slam_cereal
