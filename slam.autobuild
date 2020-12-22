@@ -5,8 +5,9 @@
 #orogen_package "slam/orogen/threed_odometry"
 
 cmake_package "slam/ga_slam"
+cmake_package "slam/ga_slam_cereal"
 orogen_package "slam/orogen/ga_slam"
 
-cmake_package "slam/ga_slam_cereal" do |pkg|
-    env_add 'CMAKE_PREFIX_PATH', "/opt/ros/kinetic"
-end
+# cmake_package "slam/ga_slam_cereal" do |pkg|
+#     env_add 'CMAKE_PREFIX_PATH', "/opt/ros/kinetic"
+# end
