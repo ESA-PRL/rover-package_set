@@ -1,0 +1,8 @@
+<package>
+  <description brief="GA SLAM Cereal">
+  </description>
+  <author></author>
+  <license></license>
+  <url></url>
+  <rosdep name="external/grid_map_core" />
+</package>

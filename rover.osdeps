@@ -15,3 +15,29 @@ automake:
 
 libtool:
     debian, ubuntu: libtool
+
+# dependencies for ga_slam
+external/grid_map_core:
+    debian, ubuntu: ros-kinetic-grid-map-core
+
+# dependencies for GA SLAM visualizations
+external/grid_map_msgs:
+    debian, ubuntu: ros-kinetic-grid-map-msgs
+
+external/grid_map_ros:
+    debian, ubuntu: ros-kinetic-grid-map-ros
+
+external/grid_map_visualization:
+    debian, ubuntu: ros-kinetic-grid-map-visualization
+
+external/grid_map_rviz_plugin:
+    debian, ubuntu: ros-kinetic-grid-map-rviz-plugin
+
+external/eigen_conversions:
+    debian, ubuntu: ros-kinetic-eigen-conversions
+
+external/tf_conversions:
+    debian, ubuntu: ros-kinetic-tf-conversions
+
+external/robot_state_publisher:
+    debian, ubuntu: ros-kinetic-robot-state-publisher

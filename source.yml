@@ -75,6 +75,10 @@ version_control:
     type: git
     url: https://github.com/esa-prl/control-orogen-pancam_360.git
     branch: RemoteOperations
+  - control/orogen/pancam_transformer:
+    type: git
+    url: https://github.com/esa-prl/control-orogen-pancam_transformer
+    branch: master
   - control/generic_rover_manoeuvre:
     type: git
     url: https://github.com/esa-prl/control-generic_rover_manoeuvre.git
@@ -115,6 +119,10 @@ version_control:
     type: git
     url: https://github.com/esa-prl/control-orogen-gps_heading.git
     branch: master
+  - control/orogen/gps_transformer:
+    type: git
+    url: https://github.com/esa-prl/control-orogen-gps_transformer
+    branch: master
   - control/orogen/slippage_estimator:
     type: git
     url: https://github.com/esa-prl/control-orogen-slippage_estimator.git
@@ -122,6 +130,10 @@ version_control:
   - control/orogen/fdir:
     type: git
     url: https://github.com/esa-prl/control-orogen-fdir.git
+    branch: master
+  - control/orogen/orbiter_preprocessing:
+    type: git
+    url: https://github.com/esa-prl/control-orogen-orbiter_preprocessing
     branch: master
   - drivers/orogen/gnss_trimble:
     type: git
@@ -195,10 +207,14 @@ version_control:
     type: git
     url: https://github.com/esa-prl/slam-ga_slam.git
     branch: master
+  - slam/ga_slam_cereal:
+    type: git
+    url: https://github.com/esa-prl/slam-ga_slam_cereal
+    branch: master
   - slam/orogen/ga_slam:
     type: git
     url: https://github.com/esa-prl/slam-orogen-ga_slam.git
-    branch: master
+    branch: add_dependencies
   - perception/traversability:
     type: git
     url: https://github.com/esa-prl/perception-traversability.git
