@@ -185,7 +185,7 @@ version_control:
     branch: master
   - slam/threed_odometry:
     type: git
-    url: https://github.com/rock-slam/slam-threed_odometry
+    url: https://github.com/esa-prl/slam-threed_odometry
     branch: master
   - slam/ga_slam:
     type: git
@@ -203,6 +203,14 @@ version_control:
     type: git
     url: https://github.com/esa-prl/perception-orogen-traversability.git
     branch: master
+  - perception/odometry_fusion:
+    type: git
+    url: https://github.com/esa-prl/perception-odometry_fusion.git
+    branch: main
+  - perception/orogen/odometry_fusion:
+    type: git
+    url: https://github.com/esa-prl/perception-orogen-odometry_fusion.git
+    branch: main
     #- drivers/orogen/autonav_interface:
     #  type: git
     #  url: https://gitlab.esa.int/prl/drivers-orogen-autonav_interface.git
