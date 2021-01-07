@@ -290,8 +290,3 @@ overrides:
     url: https://github.com/esa-prl/drivers-orogen-camera_firewire.git
     push_to: https://github.com/esa-prl/drivers-orogen-camera_firewire.git
     branch: master
-  - slam/envire:
-    type: git
-    url: https://github.com/esa-prl/slam-envire.git
-    push_to: https://github.com/esa-prl/slam-envire.git
-    branch: focal
