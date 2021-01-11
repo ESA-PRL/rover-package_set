@@ -301,8 +301,3 @@ overrides:
     url: https://github.com/esa-prl/drivers-velodyne_lidar.git
     push_to: https://github.com/esa-prl/drivers-velodyne_lidar.git
     branch: focal
-  - drivers/orogen/camera_firewire:
-    type: git
-    url: https://github.com/esa-prl/drivers-orogen-camera_firewire.git
-    push_to: https://github.com/esa-prl/drivers-orogen-camera_firewire.git
-    branch: master
