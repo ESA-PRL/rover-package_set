@@ -130,7 +130,7 @@ version_control:
   - control/orogen/orbiter_preprocessing:
     type: git
     url: https://github.com/esa-prl/control-orogen-orbiter_preprocessing
-    branch: focal
+    branch: master
   - drivers/orogen/gnss_trimble:
     type: git
     url: https://github.com/rock-drivers/drivers-orogen-gnss_trimble.git
@@ -162,7 +162,7 @@ version_control:
   - perception/orogen/dem_generation:
     type: git
     url: https://github.com/esa-prl/perception-orogen-dem_generation.git
-    branch: focal
+    branch: master
   - perception/cartographer:
     type: git
     url: https://github.com/esa-prl/perception-cartographer.git
@@ -170,7 +170,7 @@ version_control:
   - perception/orogen/cartographer:
     type: git
     url: https://github.com/esa-prl/perception-orogen-cartographer.git
-    branch: focal
+    branch: master
   - perception/orogen/viso2_with_imu:
     type: git
     url: https://github.com/esa-prl/perception-orogen-viso2_with_imu.git
@@ -210,7 +210,7 @@ version_control:
   - slam/orogen/ga_slam:
     type: git
     url: https://github.com/esa-prl/slam-orogen-ga_slam.git
-    branch: focal
+    branch: master
   - perception/traversability:
     type: git
     url: https://github.com/esa-prl/perception-traversability.git
@@ -295,7 +295,7 @@ overrides:
     type: git
     url: https://github.com/esa-prl/perception-orogen-stereo.git
     push_to: https://github.com/esa-prl/perception-orogen-stereo.git
-    branch: focal
+    branch: master
   - drivers/velodyne_lidar:
     type: git
     url: https://github.com/esa-prl/drivers-velodyne_lidar.git
