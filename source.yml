@@ -296,8 +296,3 @@ overrides:
     url: https://github.com/esa-prl/perception-orogen-stereo.git
     push_to: https://github.com/esa-prl/perception-orogen-stereo.git
     branch: master
-  - drivers/velodyne_lidar:
-    type: git
-    url: https://github.com/esa-prl/drivers-velodyne_lidar.git
-    push_to: https://github.com/esa-prl/drivers-velodyne_lidar.git
-    branch: focal
