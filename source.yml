@@ -43,10 +43,6 @@ version_control:
     type: git
     url: https://github.com/esa-prl/drivers-orogen-dsp1760.git
     branch: master
-  - drivers/orogen/velodyne_lidar:
-    type: git
-    url: https://github.com/rock-drivers/drivers-orogen-velodyne_lidar.git
-    branch: master
   - drivers/telemetry_telecommand:
     type: git
     url: https://github.com/esa-prl/drivers-telemetry_telecommand.git
@@ -300,4 +296,3 @@ overrides:
     url: https://github.com/esa-prl/perception-orogen-stereo.git
     push_to: https://github.com/esa-prl/perception-orogen-stereo.git
     branch: master
-
