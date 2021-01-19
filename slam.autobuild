@@ -15,5 +15,6 @@ end
 orogen_package "slam/orogen/ga_slam"
 
 orogen_package "exoter/orogen/localization_frontend"
+cmake_package "exoter/exoter_dynamics"
 cmake_package "slam/localization"
 
