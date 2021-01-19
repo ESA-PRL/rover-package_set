@@ -87,6 +87,10 @@ version_control:
     type: git
     url: https://github.com/esa-prl/exoter-exoter_kinematics.git
     branch: master
+  - exoter/exoter_dynamics:
+    type: git
+    url: https://github.com/esa-prl/exoter-exoter_dynamics.git
+    branch: master
   - exoter/orogen/localization_frontend:
     type: git
     url: https://github.com/esa-prl/exoter-orogen-localization_frontend.git
