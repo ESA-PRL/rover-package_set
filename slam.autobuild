@@ -14,5 +14,5 @@ end
 
 orogen_package "slam/orogen/ga_slam"
 
-orogen_package "exoter/orogen/localization_frontend
+orogen_package "exoter/orogen/localization_frontend"
 
