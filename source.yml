@@ -215,6 +215,10 @@ version_control:
     type: git
     url: https://github.com/esa-prl/slam-orogen-ga_slam.git
     branch: master
+  - slam/localization:
+    type: git
+    url: https://github.com/esa-prl/slam-localization.git
+    branch: master
   - perception/traversability:
     type: git
     url: https://github.com/esa-prl/perception-traversability.git
