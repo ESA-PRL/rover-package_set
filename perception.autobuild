@@ -29,3 +29,6 @@ orogen_package "perception/orogen/odometry_fusion"
 #cmake_package "perception/spartan"
 #orogen_package "perception/orogen/spartan"
 
+cmake_package "perception/occlusion_inpainting"
+orogen_package "perception/orogen/occlusion_inpainting"
+

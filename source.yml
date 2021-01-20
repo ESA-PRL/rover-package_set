@@ -183,6 +183,14 @@ version_control:
     type: git
     url: https://github.com/esa-prl/perception-orogen-viso2_evaluation.git
     branch: master
+  - perception/occlusion_inpainting:
+    type: git
+    url: https://github.com/esa-prl/perception-occlusion_inpainting.git
+    branch: master
+  - perception/orogen/occlusion_inpainting:
+    type: git
+    url: https://github.com/esa-prl/perception-orogen-occlusion_inpainting.git
+    branch: master
   - planning/path_planning:
     type: git
     url: https://github.com/esa-prl/planning-path_planning.git
