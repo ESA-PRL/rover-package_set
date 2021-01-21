@@ -29,7 +29,6 @@ orogen_package "perception/orogen/odometry_fusion"
 #cmake_package "perception/spartan"
 #orogen_package "perception/orogen/spartan"
 
-cmake_package "perception/occlusion_inpainting"
 cmake_package "perception/occlusion_inpainting" do |pkg|
     # TODO @mstoelzle: this needs fixing
     env_add 'CMAKE_PREFIX_PATH', `python -c 'import torch;print(torch.utils.cmake_prefix_path)'`
