@@ -139,6 +139,8 @@ version_control:
     type: git
     url: https://github.com/rock-drivers/drivers-gnss_trimble.git
     branch: master
+  - external/pybind11:
+    github: pybind/pybind11
   - perception/shutter_controller:
     type: git
     url: https://github.com/esa-prl/perception-shutter_controller.git
@@ -243,8 +245,10 @@ version_control:
     #  type: git
     #  url: https://github.com/esa-prl/perception-orogen-spartan.git
     #  branch: master
-  - external/pybind11:
-    github: pybind/pybind11
+  - tools/pocolog_pybind:
+    type: git
+    url: https://github.com/esa-prl/tools-pocolog_pybind.git
+    branch: main
 
 # The following section defines overrides of this package set to packages defined in PRECEEDING package sets.
 # Precedence is given by the order they are stated in the manifest.
