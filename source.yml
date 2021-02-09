@@ -140,7 +140,9 @@ version_control:
     url: https://github.com/rock-drivers/drivers-gnss_trimble.git
     branch: master
   - external/pybind11:
-    github: pybind/pybind11
+    type: git
+    url: https://github.com/pybind/pybind11.git
+    branch: master
   - perception/shutter_controller:
     type: git
     url: https://github.com/esa-prl/perception-shutter_controller.git
