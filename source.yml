@@ -87,6 +87,10 @@ version_control:
     type: git
     url: https://github.com/esa-prl/exoter-exoter_kinematics.git
     branch: master
+  - external/libtorch:
+    type: archive
+    url: https://download.pytorch.org/libtorch/cu110/libtorch-cxx11-abi-shared-with-deps-1.7.1%2Bcu110.zip
+    update_cached_file: false
   - control/orogen/locomotion_control:
     type: git
     url: https://github.com/esa-prl/control-orogen-locomotion_control.git
@@ -182,6 +186,14 @@ version_control:
   - perception/orogen/viso2_evaluation:
     type: git
     url: https://github.com/esa-prl/perception-orogen-viso2_evaluation.git
+    branch: master
+  - perception/occlusion_inpainting:
+    type: git
+    url: https://github.com/esa-prl/perception-occlusion_inpainting.git
+    branch: master
+  - perception/orogen/occlusion_inpainting:
+    type: git
+    url: https://github.com/esa-prl/perception-orogen-occlusion_inpainting.git
     branch: master
   - planning/path_planning:
     type: git

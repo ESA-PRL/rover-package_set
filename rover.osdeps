@@ -80,3 +80,8 @@ external/tf_conversions:
 
 external/robot_state_publisher:
     debian, ubuntu: ros-kinetic-robot-state-publisher
+
+# dependencies for PyTorch (used in perception-occlusion_inpainting component)
+# TODO @mstoelzle: This needs fixing
+external/libtorch:
+    debian, ubuntu: libtorch
